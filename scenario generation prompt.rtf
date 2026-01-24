@@ -1,0 +1,98 @@
+{\rtf1\ansi\ansicpg1253\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 You are an expert Scenario Engineer for stakeholder training.\
+I ALREADY have the Knowledge Graph (KG) constructed. I will attach:\
+1) The KG export (e.g., Cypher script / dump / schema / sample queries), and\
+2) A first batch of CSV files (supporting data) in this message,\
+Then I will attach the next batch of CSV files in my NEXT prompt.\
+\
+IMPORTANT BATCH RULE:\
+- Treat the attachments I provide now as \'93Batch 1\'94.\
+- You MUST first read Batch 1 (KG export + CSVs) and extract what you need for scenario grounding.\
+- Then you MUST STOP and ask me to attach \'93Batch 2\'94 (more CSVs).\
+- Do NOT finalize the scenarios until I confirm: \'93All batches uploaded \'97 generate scenarios.\'94\
+- However, after Batch 1 you MAY propose a brief \'93Scenario Plan\'94 (what you can already generate vs. what needs Batch 2), but no full scenarios yet.\
+\
+OUTPUT REQUIREMENT:\
+- When I say \'93All batches uploaded \'97 generate scenarios.\'94 you will produce ONLY solid text (no JSON, no code blocks).\
+- You may include Cypher queries inline as plain text lines (not fenced code blocks).\
+- The scenarios must be grounded in the entities/relationships present in the KG and evidenced by the CSVs. Do NOT invent facts.\
+\
+SCENARIO PACKAGE TO GENERATE (after all batches are uploaded)\
+Create 5 scenario types for stakeholder training sessions, with 2 concrete scenarios per type (10 total).\
+Types:\
+\
+1) Decision-Making Training\
+Learners must:\
+- Balance conflicting goals (GOAL \uc0\u8596  GOAL conflicts)\
+- Allocate limited resources (Resource availability vs. requirements)\
+- Manage risks under time pressure (Risk threats + Constraint deadlines)\
+Include this Cypher logic pattern (adapt labels/properties to my KG):\
+Decision point match:\
+MATCH (g1:Goal)-[c:CONFLICTS]->(g2:Goal)\
+MATCH (g1)-[:REQUIRES]->(r:Resource)<-[:REQUIRES]-(g2)\
+WHERE r.quantity < (g1.quantity_needed + g2.quantity_needed)\
+RETURN g1.name, g2.name, r.name, c.conflict_type;\
+\
+2) Risk Management Training\
+Teach learners to:\
+- Identify cascading risks (Risk \uc0\u8594  Event \u8594  Risk chains)\
+- Prioritize mitigation strategies\
+- Balance risk tolerance with mission objectives\
+\
+3) Resource Optimization Training\
+Practice:\
+- Just-in-time resource allocation\
+- Predicting resource depletion\
+- Managing resource constraints\
+\
+4) Team Coordination Training\
+Develop skills in:\
+- Multi-actor collaboration (shared goal pursuit)\
+- Communication under constraints\
+- Authority delegation\
+\
+5) Ethical Decision-Making Training\
+Explore:\
+- Value conflicts in high-stakes situations\
+- Trade-offs between competing values\
+- Outcome\'96value alignment analysis\
+\
+MANDATORY STRUCTURE (for each concrete scenario; solid text)\
+A) Title (1 line)\
+B) Scenario Brief (6\'9610 lines, stakeholder-friendly)\
+C) Stakeholders & Roles (bullets)\
+D) Data Grounding (must be explicit)\
+   - List the KG nodes used (ids/names) and relationships that connect them\
+   - Point to the CSV file(s) + column(s) that support the facts in this scenario\
+E) Situation Context (what happened / what\'92s at stake)\
+F) Constraints (time, budget, policy, capability, comms, etc.)\
+G) Decision Points (at least 2)\
+   - For each decision point: Options A/B/C, expected trade-offs, and likely second-order effects\
+H) Risks & Cascades (if applicable)\
+I) Resource Picture (if applicable: what\'92s scarce, what\'92s required, what can substitute)\
+J) Coordination/Communication Plan (if applicable)\
+K) Ethics/Values Tension (if applicable: which values conflict and why)\
+L) Evidence Queries (plain text Cypher lines; no code blocks)\
+   1) Query to retrieve the exact entities used\
+   2) Query to compute the key indicator(s) (shortfall, cascade depth, conflict set, etc.)\
+   3) Query for after-action audit evidence\
+M) Facilitator Notes (what to observe, typical pitfalls)\
+N) Debrief Questions (6\'9610)\
+\
+GLOBAL RULES\
+- Do NOT invent entities, numbers, timestamps, or relationships not present in the KG/CSVs.\
+- Use the KG export as the source of truth for labels/relations and adapt the patterns accordingly.\
+- Keep the writing \'93solid\'94: coherent paragraphs + structured bullet lists; no templates left unfilled.\
+\
+NOW: Process Batch 1 (KG export + CSVs) from my attachments.\
+1) Summarize the KG elements relevant to the 5 scenario types (Goal, Resource, Risk, Event, Constraint, Stakeholder/Actor, Value/Ethics, etc.).\
+2) Identify what additional info you expect from Batch 2 (if any) to ground scenarios better.\
+3) Present a short Scenario Plan (what scenario types are already well-supported vs. need more data).\
+4) Then stop and ask me to attach Batch 2.\
+}
