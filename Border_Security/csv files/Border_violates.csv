@@ -1,0 +1,2 @@
+from_entity_id,from_entity_type,to_entity_id,to_entity_type,violation_severity,intentional,consequence
+EVT_009,Event,CONST_002,Constraint,minor,FALSE,mission_review

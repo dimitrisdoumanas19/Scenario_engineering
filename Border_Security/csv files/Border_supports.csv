@@ -1,0 +1,10 @@
+from_goal_id,to_goal_id,support_strength,support_type,dependency
+GOAL_004,GOAL_001,0.88,prerequisite,necessary
+GOAL_005,GOAL_001,0.78,contributory,helpful
+GOAL_006,GOAL_001,0.85,complementary,necessary
+GOAL_007,GOAL_002,0.92,instrumental,helpful
+GOAL_008,GOAL_001,0.80,contributory,helpful
+GOAL_009,GOAL_001,0.90,instrumental,necessary
+GOAL_010,GOAL_001,0.70,complementary,helpful
+GOAL_011,GOAL_001,0.82,contributory,helpful
+GOAL_012,GOAL_002,0.88,prerequisite,necessary

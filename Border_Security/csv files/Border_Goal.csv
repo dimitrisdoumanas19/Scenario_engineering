@@ -1,0 +1,13 @@
+goal_id,description,priority,target_state,deadline,success_criteria,complexity,visibility,stakeholders,parent_goal
+GOAL_001,Intercept unauthorized border crossing in Sector 7,critical,suspects_detained,120,"all_suspects_located|no_civilian_casualties|evidence_preserved|border_integrity_maintained",4,classified,"ACT_001|ACT_002|ACT_004",
+GOAL_002,Gather intelligence on smuggling network,high,intel_gathered,,"identify_network_members|map_routes|document_methods|identify_leadership",5,classified,"ACT_002|ACT_008",
+GOAL_003,Evade border patrol detection,critical,crossing_successful,90,"avoid_detection|reach_destination|deliver_cargo",4,private,"ACT_003|ACT_006|ACT_012",
+GOAL_004,Establish secure perimeter around interdiction zone,high,perimeter_secured,30,"all_access_points_covered|communications_established|backup_positioned|escape_routes_blocked",3,classified,"ACT_001|ACT_004|ACT_010",GOAL_001
+GOAL_005,Document evidence for prosecution,high,evidence_documented,180,"chain_of_custody_maintained|photos_taken|statements_recorded|forensic_samples_collected",3,classified,"ACT_001|ACT_002|ACT_014",GOAL_001
+GOAL_006,Ensure officer safety during operation,critical,officers_safe,,"no_injuries|proper_equipment_used|backup_available|threat_assessment_current",2,public,"ACT_001|ACT_004|ACT_005|ACT_007",GOAL_001
+GOAL_007,Minimize operation visibility to smuggling network,medium,operation_covert,,"no_media_exposure|limited_communications|operational_security_maintained|informant_protection",4,classified,"ACT_002|ACT_008|ACT_013",GOAL_002
+GOAL_008,Coordinate aerial surveillance operations,high,aerial_surveillance_active,60,"drone_deployed|thermal_imaging_operational|real_time_feed_established|target_tracking_active",4,classified,"ACT_011|ACT_004",GOAL_001
+GOAL_009,Execute tactical arrest of suspects,critical,suspects_apprehended,90,"suspects_secured|rights_read|no_use_of_force_violations|scene_controlled",4,classified,"ACT_001|ACT_015",GOAL_001
+GOAL_010,Maintain inter-agency coordination,medium,agencies_coordinated,,"information_shared|jurisdictions_respected|resources_coordinated|unified_command_established",3,classified,"ACT_013|ACT_004",GOAL_001
+GOAL_011,Deploy K9 unit for detection and tracking,high,k9_operational,45,"narcotics_detected|suspects_tracked|evidence_located|handler_safety_maintained",3,classified,"ACT_005|ACT_001",GOAL_001
+GOAL_012,Analyze smuggling patterns and predict routes,high,patterns_identified,240,"historical_data_analyzed|routes_mapped|timing_patterns_identified|vulnerabilities_assessed",5,classified,"ACT_002|ACT_008",GOAL_002

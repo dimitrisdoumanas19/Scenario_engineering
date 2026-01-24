@@ -1,0 +1,7 @@
+from_goal_id,to_goal_id,conflict_type,intensity,resolution_possible
+GOAL_001,GOAL_003,direct_opposition,0.98,FALSE
+GOAL_002,GOAL_007,temporal_conflict,0.58,TRUE
+GOAL_007,GOAL_001,value_tension,0.42,TRUE
+VAL_001,VAL_003,value_tension,0.48,TRUE
+VAL_004,VAL_007,value_tension,0.65,TRUE
+VAL_008,VAL_003,value_tension,0.40,TRUE

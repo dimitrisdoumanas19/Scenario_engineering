@@ -1,0 +1,28 @@
+event_id,name,event_type,timestamp,duration,initiator,location,severity,observability,reversibility
+EVT_001,Motion Detected at Sector 7 Perimeter,environmental,15,,environmental,sector_7_south,moderate,observable,FALSE
+EVT_002,Alert Issued to Agent Rodriguez,system,16,1,system,sector_7,minor,overt,FALSE
+EVT_003,Agent Rodriguez Deploys to Location,actor_action,20,10,ACT_001,sector_7_south,moderate,overt,FALSE
+EVT_004,Suspects Identified via Thermal Camera,emergent,25,,emergent,sector_7_south,major,observable,FALSE
+EVT_005,K9 Unit Deployed for Tracking,actor_action,28,5,ACT_005,sector_7_south,moderate,overt,FALSE
+EVT_006,Intelligence Analysis Initiated,actor_action,30,20,ACT_002,headquarters,minor,covert,FALSE
+EVT_007,Backup Units Alerted,system,32,2,system,sector_7,minor,overt,FALSE
+EVT_008,Perimeter Established,actor_action,40,15,ACT_001,sector_7_south,major,overt,FALSE
+EVT_009,Suspects Attempt Evasion,actor_action,42,8,ACT_003,sector_7_south,major,observable,FALSE
+EVT_010,K9 Locates Suspect Trail,emergent,45,,emergent,sector_7_south,moderate,observable,FALSE
+EVT_011,Drone Surveillance Activated,actor_action,48,30,ACT_011,sector_7_airspace,moderate,covert,FALSE
+EVT_012,Visual Contact with Suspects,emergent,50,,emergent,sector_7_south,major,observable,FALSE
+EVT_013,Verbal Commands Issued,actor_action,52,2,ACT_001,sector_7_south,moderate,overt,FALSE
+EVT_014,First Suspect Detained,actor_action,55,8,ACT_001,sector_7_south,major,overt,FALSE
+EVT_015,Second Suspect Flees into Terrain,actor_action,58,5,ACT_006,sector_7_ravine,major,observable,FALSE
+EVT_016,Tactical Team Deployed,actor_action,63,7,ACT_015,sector_7_ravine,major,overt,FALSE
+EVT_017,Narcotics Detected by K9,emergent,70,,emergent,sector_7_south,critical,observable,FALSE
+EVT_018,Second Suspect Apprehended,actor_action,72,10,ACT_015,sector_7_ravine,major,overt,FALSE
+EVT_019,Evidence Collection Begins,actor_action,85,30,ACT_014,sector_7_south,moderate,observable,FALSE
+EVT_020,Intelligence Report Generated,actor_action,110,20,ACT_002,headquarters,moderate,covert,FALSE
+EVT_021,Medical Check Performed on Suspects,actor_action,95,10,ACT_007,sector_7_south,minor,overt,FALSE
+EVT_022,Biometric Data Collected,actor_action,115,8,ACT_014,sector_7_south,moderate,covert,FALSE
+EVT_023,Network Analysis Completed,actor_action,140,30,ACT_008,headquarters,major,covert,FALSE
+EVT_024,Suspects Transported to Processing,actor_action,145,20,ACT_001,sector_7_to_headquarters,moderate,overt,FALSE
+EVT_025,Cartel Communication Intercepted,emergent,160,,emergent,communications_center,critical,covert,FALSE
+EVT_026,Operation Debriefing Conducted,actor_action,175,15,ACT_004,headquarters,minor,covert,FALSE
+EVT_027,Follow-up Intelligence Tasking Issued,actor_action,190,5,ACT_008,headquarters,moderate,covert,FALSE

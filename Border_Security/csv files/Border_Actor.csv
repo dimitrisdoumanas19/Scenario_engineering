@@ -1,0 +1,16 @@
+actor_id,name,role,authority_level,expertise,emotional_state,trust_level,communication_capability,status,affiliation
+ACT_001,Agent Rodriguez,patrol_officer,3,"surveillance|interdiction|de_escalation|tactical_driving",alert,0.92,"radio|secure_phone",active,border_patrol
+ACT_002,Intelligence Analyst Kim,intelligence_analyst,2,"threat_assessment|pattern_recognition|data_analysis|geospatial_intelligence",calm,0.88,"encrypted_chat|satellite_link",active,border_patrol
+ACT_003,Smuggling Suspect Alpha,suspect,1,"evasion|terrain_navigation|counter_surveillance",anxious,0.15,mobile_phone,engaged,criminal_organization
+ACT_004,Sector Commander Chen,commander,5,"strategic_planning|resource_allocation|crisis_management|policy_enforcement",focused,0.95,"radio|secure_phone|satellite_link",active,border_patrol
+ACT_005,K9 Handler Martinez,specialist,3,"canine_operations|tracking|search_rescue|narcotics_detection",alert,0.90,"radio|hand_signals",active,border_patrol
+ACT_006,Smuggling Suspect Bravo,suspect,1,"evasion|counter_surveillance|weapons_handling",hostile,0.10,mobile_phone,engaged,criminal_organization
+ACT_007,Medical Support Officer Lee,specialist,2,"emergency_medicine|triage|evacuation|trauma_care",calm,0.93,"radio|medical_comms",standby,border_patrol
+ACT_008,Intelligence Coordinator Park,intelligence_analyst,4,"network_analysis|strategic_intelligence|coordination|threat_fusion",calm,0.91,"encrypted_chat|satellite_link|secure_phone",active,border_patrol
+ACT_009,Civilian Witness,civilian,1,none,stressed,0.60,mobile_phone,unavailable,neutral_party
+ACT_010,Backup Patrol Unit,patrol_officer,3,"interdiction|tactical_operations|support|perimeter_security",alert,0.88,radio,standby,border_patrol
+ACT_011,Drone Operator Chen,specialist,3,"uav_operations|aerial_surveillance|thermal_imaging|flight_control",focused,0.89,"radio|data_link",active,border_patrol
+ACT_012,Cartel Coordinator,suspect,2,"logistics|communications|recruitment|counter_intelligence",calculating,0.05,"encrypted_phone|radio",engaged,criminal_organization
+ACT_013,Border Liaison Officer Garcia,coordinator,4,"inter_agency_coordination|diplomatic_protocol|information_sharing",professional,0.94,"secure_phone|encrypted_email",active,border_patrol
+ACT_014,Forensic Specialist Wong,specialist,3,"evidence_collection|biometrics|crime_scene_analysis|chain_of_custody",methodical,0.92,radio,standby,border_patrol
+ACT_015,Tactical Response Team,patrol_officer,4,"high_risk_operations|armed_response|hostage_rescue|tactical_assault",ready,0.93,"tactical_radio|secure_comms",standby,border_patrol

@@ -1,0 +1,16 @@
+constraint_id,name,type,scope,enforcement,description,penalty,flexibility,temporal_validity,source
+CONST_001,Rules of Engagement Protocol,legal,"ACT_001|ACT_015",mandatory,Use of force only when life is threatened or suspect poses immediate danger,legal_liability,0.2,always,federal_law
+CONST_002,Maximum Pursuit Duration,operational,EVT_*,recommended,Active pursuit should not exceed 2 hours without supervisor approval,mission_review,0.6,T+0:T+120,agency_policy
+CONST_003,Evidence Chain of Custody,legal,"ACT_001|ACT_002|ACT_014",mandatory,All evidence must be documented and handled per legal standards,case_dismissal,0.1,always,federal_law
+CONST_004,Miranda Rights Notification,legal,"ACT_001|ACT_015",mandatory,Suspects must be informed of rights upon detention,evidence_suppression,0.05,always,federal_law
+CONST_005,Medical Assessment Requirement,ethical,"ACT_001|ACT_007",mandatory,All detained individuals must receive medical screening,liability_claim,0.2,always,agency_policy
+CONST_006,Communication Protocol Standards,operational,"ACT_001|ACT_002|ACT_004|ACT_008",mandatory,All operational communications must use encrypted channels,security_breach,0.3,always,agency_policy
+CONST_007,Supervisor Authorization for Force,operational,"ACT_001|ACT_015",recommended,Use of force beyond verbal commands requires supervisor notification,disciplinary_action,0.4,always,agency_policy
+CONST_008,Environmental Protection Standards,ethical,EVT_*,advisory,Operations should minimize environmental impact when possible,reputation_damage,0.8,always,agency_guidelines
+CONST_009,Privacy Protection for Witnesses,legal,"ACT_001|ACT_002|ACT_009",mandatory,Civilian witness information must be protected and anonymized,legal_liability,0.15,always,federal_law
+CONST_010,Resource Budget Limits,resource,"RES_*|ACT_004",recommended,Equipment deployment should remain within allocated budget,budget_review,0.7,T+0:T+180,agency_policy
+CONST_011,Jurisdictional Boundaries,legal,"ACT_001|ACT_013",mandatory,Operations must respect international and inter-agency jurisdictions,diplomatic_incident,0.1,always,international_law
+CONST_012,Drone Flight Restrictions,operational,"ACT_011|RES_009",mandatory,UAV operations must comply with airspace regulations and altitude limits,faa_violation,0.3,always,federal_aviation_regulations
+CONST_013,K9 Deployment Safety Protocol,ethical,"ACT_005|RES_002",mandatory,K9 units must not be exposed to situations exceeding training parameters,animal_welfare_violation,0.2,always,agency_policy
+CONST_014,Intelligence Sharing Limitations,operational,"ACT_002|ACT_008|ACT_013",mandatory,Classified information sharing must follow need-to-know and clearance protocols,security_breach,0.15,always,national_security_directive
+CONST_015,Biometric Data Handling,legal,"ACT_014|RES_010",mandatory,Biometric data collection and storage must comply with privacy regulations,legal_liability,0.1,always,privacy_act

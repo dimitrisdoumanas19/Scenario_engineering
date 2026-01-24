@@ -1,0 +1,13 @@
+value_id,name,category,description,weight,stakeholders,measurability,conflicts_with,domain_specific,enforcement_mechanism
+VAL_001,Public Safety,ethical,Protection of civilian life takes absolute precedence over operational objectives,0.95,ACT_*,quantifiable,VAL_003,FALSE,oversight
+VAL_002,Due Process,ethical,Suspects must be treated according to legal rights and procedures,0.88,"ACT_001|ACT_002|ACT_015",observable,,FALSE,regulation
+VAL_003,Mission Success,operational,Achieving stated mission objectives effectively and efficiently,0.75,"ACT_001|ACT_002|ACT_004",quantifiable,VAL_001,TRUE,performance_review
+VAL_004,Transparency,organizational,Operations should be documented and accountable to oversight,0.70,"ACT_002|ACT_004|ACT_008|ACT_013",observable,VAL_007,FALSE,peer_review
+VAL_005,Officer Welfare,ethical,Agent safety and wellbeing must be prioritized in operational planning,0.92,"ACT_001|ACT_004|ACT_005|ACT_015",quantifiable,,FALSE,oversight
+VAL_006,Evidence Integrity,legal,All evidence must be handled to maintain admissibility in legal proceedings,0.85,"ACT_001|ACT_002|ACT_014",quantifiable,,TRUE,regulation
+VAL_007,Operational Security,strategic,Sensitive information and methods must be protected from disclosure,0.80,"ACT_002|ACT_004|ACT_008|ACT_013",observable,VAL_004,TRUE,training
+VAL_008,Proportionality,ethical,Response measures must be appropriate to the threat level presented,0.82,"ACT_001|ACT_015",subjective,,FALSE,oversight
+VAL_009,Community Trust,organizational,Operations should maintain positive relationship with local communities,0.68,"ACT_001|ACT_004|ACT_013",subjective,,FALSE,peer_review
+VAL_010,Resource Efficiency,operational,Mission objectives should be achieved with minimal resource expenditure,0.65,"ACT_004|ACT_008",quantifiable,,TRUE,performance_review
+VAL_011,International Cooperation,strategic,Border operations should support diplomatic relationships and treaties,0.73,"ACT_013|ACT_004",observable,,TRUE,diplomatic_protocol
+VAL_012,Constitutional Rights,legal,All operations must respect constitutional protections against unreasonable search and seizure,0.90,"ACT_001|ACT_002|ACT_004",observable,,FALSE,judicial_review

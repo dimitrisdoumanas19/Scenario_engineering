@@ -1,0 +1,14 @@
+from_resource_id,to_entity_id,to_entity_type,relevance,timeliness,reliability
+RES_003,ACT_001,Actor,0.90,current,0.75
+RES_003,ACT_002,Actor,0.96,current,0.75
+RES_003,ACT_008,Actor,0.94,current,0.78
+RES_003,EVT_006,Event,0.92,current,0.75
+RES_010,ACT_002,Actor,0.88,current,0.80
+RES_010,ACT_008,Actor,0.90,current,0.82
+RES_010,ACT_014,Actor,0.92,current,0.82
+RES_010,EVT_022,Event,0.96,current,0.80
+RES_010,EVT_023,Event,0.94,current,0.82
+RES_021,ACT_002,Actor,0.86,current,0.86
+RES_021,ACT_008,Actor,0.88,current,0.88
+RES_021,EVT_020,Event,0.92,current,0.86
+RES_021,EVT_023,Event,0.90,current,0.88

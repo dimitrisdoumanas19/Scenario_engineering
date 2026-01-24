@@ -1,0 +1,16 @@
+from_event_id,to_outcome_id,contribution_weight,predictability,reversibility
+EVT_018,OUT_001,0.88,expected,FALSE
+EVT_023,OUT_002,0.92,expected,FALSE
+EVT_008,OUT_003,0.96,expected,FALSE
+EVT_022,OUT_004,0.85,expected,FALSE
+EVT_018,OUT_005,0.75,expected,FALSE
+EVT_020,OUT_006,0.82,likely,FALSE
+EVT_011,OUT_007,0.94,expected,FALSE
+EVT_018,OUT_008,0.90,expected,FALSE
+EVT_026,OUT_009,0.88,expected,FALSE
+EVT_017,OUT_010,0.92,expected,FALSE
+EVT_023,OUT_011,0.86,expected,FALSE
+EVT_015,OUT_012,0.80,expected,FALSE
+EVT_022,OUT_013,0.96,unexpected,FALSE
+EVT_021,OUT_014,0.97,expected,FALSE
+EVT_025,OUT_015,0.94,unexpected,FALSE

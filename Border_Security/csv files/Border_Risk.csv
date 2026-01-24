@@ -1,0 +1,16 @@
+risk_id,description,category,likelihood,severity,time_horizon,affected_entities,indicators,mitigation_cost,status
+RISK_001,Potential smuggling operation with armed escorts,security,0.65,severe,immediate,"ACT_001|GOAL_001|ACT_005","unusual_activity_patterns|multiple_heat_signatures|weapons_indicators",0.45,emerging
+RISK_002,Civilian bystanders in interdiction zone,safety,0.30,catastrophic,short_term,"ACT_001|GOAL_001|VAL_001","residential_proximity|nighttime_activity|unidentified_heat_signatures",0.25,potential
+RISK_003,Intelligence leak compromising operation,operational,0.15,moderate,medium_term,"GOAL_002|ACT_002|GOAL_007","unusual_communication_patterns|compromised_informants|media_presence",0.60,potential
+RISK_004,Officer injury during suspect apprehension,safety,0.25,severe,immediate,"ACT_001|ACT_005|GOAL_006","suspect_resistance|difficult_terrain|weapons_present|darkness",0.35,mitigated
+RISK_005,Evidence contamination or loss,legal,0.20,moderate,short_term,"GOAL_005|GOAL_001","improper_handling|environmental_conditions|chain_of_custody_breaks",0.20,mitigated
+RISK_006,Suspects escape during transport,security,0.10,severe,short_term,"GOAL_001|ACT_001","inadequate_restraints|insufficient_personnel|vehicle_malfunction",0.40,potential
+RISK_007,Media exposure of covert operation,reputational,0.35,moderate,medium_term,"GOAL_007|GOAL_002","civilian_witnesses|radio_intercept|social_media_activity",0.50,emerging
+RISK_008,Equipment failure in critical moment,operational,0.18,moderate,immediate,"RES_001|RES_009|GOAL_001","aging_equipment|harsh_conditions|battery_depletion|signal_interference",0.30,potential
+RISK_009,Communication breakdown between units,operational,0.22,severe,immediate,"ACT_001|ACT_004|GOAL_006","signal_interference|equipment_malfunction|terrain_obstacles|atmospheric_conditions",0.25,mitigated
+RISK_010,Legal challenge to detention procedures,legal,0.28,moderate,long_term,"GOAL_005|VAL_002","procedural_ambiguity|rights_notification_delay|use_of_force_questions",0.35,potential
+RISK_011,Cartel retaliation against informants,security,0.40,catastrophic,medium_term,"ACT_009|GOAL_007|VAL_001","informant_exposure|operational_leaks|suspicious_surveillance",0.70,emerging
+RISK_012,Cross-border diplomatic incident,strategic,0.12,severe,long_term,"GOAL_001|ACT_013|VAL_004","international_boundary_violations|foreign_national_involvement|diplomatic_protests",0.55,potential
+RISK_013,Drone system compromise or hijacking,security,0.08,moderate,immediate,"RES_009|ACT_011|GOAL_008","signal_jamming|unauthorized_access_attempts|gps_spoofing",0.45,potential
+RISK_014,Nighttime operation environmental hazards,safety,0.35,moderate,immediate,"ACT_001|ACT_005|ACT_015","limited_visibility|rough_terrain|wildlife_encounters|weather_changes",0.20,mitigated
+RISK_015,Narcotics exposure to personnel or K9,safety,0.15,severe,immediate,"ACT_005|RES_002|ACT_007","open_containers|powder_substances|suspicious_packages",0.30,mitigated

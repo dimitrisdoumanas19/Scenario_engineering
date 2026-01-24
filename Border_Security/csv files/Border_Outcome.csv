@@ -1,0 +1,16 @@
+outcome_id,description,status,timestamp,contributing_events,goals_satisfied,goals_violated,values_upheld,values_compromised,quality_score,unintended_consequences
+OUT_001,Two suspects successfully detained without casualties or rights violations,achieved,72,"EVT_001|EVT_002|EVT_003|EVT_004|EVT_014|EVT_018",GOAL_001,GOAL_003,"VAL_001|VAL_002|VAL_003|VAL_005|VAL_008",,0.94,
+OUT_002,Intelligence network mapping identified 12 cartel members and 3 smuggling routes,achieved,140,"EVT_006|EVT_020|EVT_023|EVT_025",GOAL_002,,"VAL_003|VAL_006|VAL_007",,0.87,increased_network_awareness
+OUT_003,Secure perimeter established in 40 minutes with all access points covered,achieved,40,"EVT_007|EVT_008",GOAL_004,,"VAL_003|VAL_005",,0.90,
+OUT_004,Complete evidence chain of custody maintained with forensic samples,achieved,180,"EVT_019|EVT_022",GOAL_005,,"VAL_002|VAL_006|VAL_012",,0.96,
+OUT_005,Zero officer injuries during high-risk operation,achieved,180,"EVT_003|EVT_005|EVT_009|EVT_014|EVT_018",GOAL_006,,"VAL_001|VAL_005",,0.98,
+OUT_006,Operation remained covert with no media exposure,achieved,180,"EVT_006|EVT_020|EVT_023",GOAL_007,,"VAL_007|VAL_009",,0.85,
+OUT_007,Aerial surveillance provided real-time intelligence for 30 minutes,achieved,78,EVT_011,GOAL_008,,"VAL_003|VAL_007",,0.88,
+OUT_008,Tactical arrest executed with proper use of force protocols,achieved,72,"EVT_013|EVT_014|EVT_016|EVT_018",GOAL_009,,"VAL_002|VAL_008|VAL_012",,0.93,
+OUT_009,Inter-agency coordination maintained with border liaison,achieved,180,"EVT_026",GOAL_010,,"VAL_004|VAL_011",,0.86,
+OUT_010,K9 unit successfully detected narcotics and tracked suspects,achieved,70,"EVT_005|EVT_010|EVT_017",GOAL_011,,"VAL_003|VAL_005",,0.92,
+OUT_011,Smuggling pattern analysis revealed temporal and geographic vulnerabilities,achieved,140,"EVT_020|EVT_023",GOAL_012,,"VAL_003|VAL_007",,0.84,sector_vulnerability_identified
+OUT_012,Suspect evasion attempt contained within perimeter,achieved,58,"EVT_009|EVT_015",GOAL_004,GOAL_003,"VAL_003|VAL_005",,0.89,
+OUT_013,Biometric identification revealed suspects with outstanding warrants,achieved,115,EVT_022,"GOAL_002|GOAL_005",,"VAL_003|VAL_006",,0.91,additional_charges_filed
+OUT_014,Medical assessment completed for all detainees per protocol,achieved,105,EVT_021,GOAL_006,,"VAL_001|VAL_002|VAL_005",,0.97,
+OUT_015,Cartel communication intercept provided actionable intelligence,achieved,160,EVT_025,GOAL_002,,"VAL_003|VAL_007",,0.88,follow_up_operations_triggered

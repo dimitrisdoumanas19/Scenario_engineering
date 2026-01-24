@@ -1,0 +1,23 @@
+resource_id,name,type,quantity,unit,availability,quality,location,access_restriction,replenishment_rate
+RES_001,Thermal Surveillance Camera,equipment,4.0,units,available,0.95,sector_7,"ACT_001|ACT_011",0.0
+RES_002,K9 Tracking Unit,personnel,1.0,units,available,0.88,mobile,"ACT_005",0.0
+RES_003,Real-time Intelligence Feed,information,1.0,streams,available,0.75,headquarters,"ACT_001|ACT_002|ACT_008",1.0
+RES_004,Patrol Vehicle,equipment,3.0,vehicles,in_use,0.90,sector_7,"ACT_001|ACT_010",0.0
+RES_005,Encrypted Communication System,equipment,8.0,units,available,0.92,distributed,"ACT_001|ACT_002|ACT_004|ACT_008|ACT_013",0.0
+RES_006,Night Vision Goggles,equipment,10.0,units,available,0.87,sector_7,"ACT_001|ACT_005|ACT_010|ACT_015",0.0
+RES_007,Medical Emergency Kit,equipment,3.0,kits,available,0.98,mobile,"ACT_007",0.0
+RES_008,Tactical Response Team,personnel,6.0,persons,standby,0.93,headquarters,"ACT_004|ACT_015",0.0
+RES_009,Surveillance Drone System,equipment,2.0,units,available,0.85,mobile,"ACT_011|ACT_004",0.0
+RES_010,Biometric Database Access,information,1.0,access,available,0.80,cloud_server,"ACT_002|ACT_008|ACT_014",1.0
+RES_011,Emergency Flares,equipment,20.0,units,available,0.95,vehicles,"ACT_001|ACT_010",0.0
+RES_012,Ballistic Vests,equipment,12.0,units,in_use,0.91,distributed,"ACT_001|ACT_005|ACT_010|ACT_015",0.0
+RES_013,GPS Tracking Devices,equipment,15.0,units,available,0.89,sector_7,"ACT_001|ACT_011",0.0
+RES_014,Forensic Evidence Kits,equipment,4.0,kits,available,0.94,vehicles,"ACT_001|ACT_014",0.0
+RES_015,Operational Time,time,180.0,minutes,available,1.00,scenario,ACT_*,0.0
+RES_016,Border Sensor Network,infrastructure,1.0,system,available,0.82,sector_7_perimeter,"ACT_001|ACT_004|ACT_011",1.0
+RES_017,Mobile Command Center,equipment,1.0,vehicle,available,0.93,sector_7,"ACT_004|ACT_013",0.0
+RES_018,Narcotics Detection Equipment,equipment,2.0,units,available,0.90,mobile,"ACT_005|ACT_014",0.0
+RES_019,Aerial Thermal Imaging System,equipment,1.0,system,available,0.88,drone,"ACT_011",0.0
+RES_020,Tactical Restraints and Handcuffs,equipment,15.0,sets,available,0.96,distributed,"ACT_001|ACT_010|ACT_015",0.0
+RES_021,Intelligence Analysis Software,information,1.0,platform,available,0.86,headquarters,"ACT_002|ACT_008",1.0
+RES_022,Portable Radio Repeater,equipment,2.0,units,available,0.89,sector_7,"ACT_001|ACT_004",0.0
