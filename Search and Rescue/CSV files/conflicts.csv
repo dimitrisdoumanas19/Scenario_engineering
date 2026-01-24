@@ -1,0 +1,11 @@
+source_goal_id,target_goal_id,conflict_intensity,conflict_type
+GOAL_001,GOAL_002,0.4,temporal
+GOAL_001,GOAL_007,0.3,resource
+GOAL_002,GOAL_001,0.4,temporal
+GOAL_004,GOAL_006,0.25,temporal
+GOAL_005,GOAL_007,0.35,resource
+GOAL_006,GOAL_004,0.25,temporal
+GOAL_007,GOAL_001,0.3,resource
+GOAL_007,GOAL_005,0.35,resource
+GOAL_009,GOAL_006,0.5,temporal
+GOAL_006,GOAL_009,0.5,temporal

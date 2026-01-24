@@ -1,0 +1,13 @@
+constraint_id,name,type,enforcement,scope,condition,violation_consequence,flexibility,origin,active_period
+CON_001,Daylight operations only,temporal,mandatory,all_field_operations,operations_between(06:00,18:00),mission_abort,0.1,safety_protocol,always
+CON_002,Minimum two-person teams,operational,mandatory,all_field_actors,team_size>=2,safety_violation,0.0,safety_regulation,always
+CON_003,Maximum helicopter payload,resource,mandatory,ACT_005|EVT_014,total_weight<=1200kg,flight_abort,0.05,physical_law,always
+CON_004,Radio silence during medical procedures,operational,advisory,medical_events,no_radio_when(medical_active),communication_gap,0.8,best_practice,conditional
+CON_005,Fuel reserve requirement,resource,mandatory,RES_004|ACT_005,fuel_remaining>=20%_capacity,grounding,0.0,safety_regulation,always
+CON_006,Maximum search radius from base,spatial,advisory,all_field_teams,distance<=15km,extended_response_time,0.6,operational_guideline,always
+CON_007,Mandatory check-in interval,temporal,mandatory,all_field_actors,check_in_every(30_minutes),safety_alert,0.2,safety_protocol,during_operations
+CON_008,Weather ceiling for helicopter,environmental,mandatory,ACT_005,visibility>=800m_AND_ceiling>=300m,no_flight,0.0,aviation_regulation,flight_operations
+CON_009,Medical certification requirement,legal,mandatory,medical_procedures,operator_certified(emergency_medical),legal_liability,0.0,regulation,always
+CON_010,Budget limitation,resource,recommended,GOAL_007|resource_allocation,total_cost<=50000_USD,budget_overrun,0.7,policy,always
+CON_011,Exclusion zone around hazards,spatial,mandatory,all_actors,distance_from(hazard)>=50m,injury_risk,0.15,safety_protocol,hazard_present
+CON_012,Maximum continuous operation time,temporal,advisory,all_field_actors,continuous_work<=8_hours,fatigue_risk,0.4,best_practice,always

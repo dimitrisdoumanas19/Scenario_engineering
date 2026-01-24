@@ -1,0 +1,11 @@
+actor_id,name,role,authority_level,expertise,emotional_state,availability,location,team_affiliation,communication_channels
+ACT_001,Sarah Chen,coordinator,5,"search_and_rescue|leadership|weather_assessment",focused,1.0,Base Camp,SAR Command,radio|satellite_phone
+ACT_002,Mountain Rescue Team Alpha,specialist,3,"alpine_rescue|first_aid|navigation",alert,0.9,Search Zone North,Field Team Alpha,radio
+ACT_003,Mountain Rescue Team Bravo,specialist,3,"rope_rescue|emergency_medical|communications",calm,0.95,Search Zone South,Field Team Bravo,radio
+ACT_004,Dr. James Martinez,specialist,4,"emergency_medicine|triage|wilderness_medicine",confident,1.0,Base Camp,Medical Unit,radio|satellite_phone|secure_chat
+ACT_005,Aerial Support Unit,support,2,"aerial_reconnaissance|thermal_imaging|coordination",calm,0.8,Airborne Zone Central,Aviation Team,radio|satellite_phone
+ACT_006,Local Guide - Maria Santos,specialist,2,"terrain_knowledge|tracking|local_weather",anxious,1.0,Search Zone East,Field Team Alpha,radio
+ACT_007,Communications Officer,coordinator,3,"radio_dispatch|coordination|logistics",stressed,1.0,Base Camp,SAR Command,radio|satellite_phone|secure_chat
+ACT_008,Logistics Coordinator,support,3,"resource_management|supply_chain|planning",calm,1.0,Base Camp,Support Team,satellite_phone|secure_chat
+ACT_009,Search Dog Handler,specialist,2,"canine_operations|tracking|scent_detection",focused,0.85,Search Zone North,Field Team Alpha,radio
+ACT_010,Weather Specialist,observer,2,"meteorology|forecasting|risk_assessment",concerned,1.0,Remote,External Consultant,satellite_phone|secure_chat

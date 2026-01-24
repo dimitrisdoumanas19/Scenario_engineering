@@ -1,0 +1,16 @@
+event_id,name,type,timestamp,duration,probability,impact_magnitude,reversible,triggered_by,state_changes
+EVT_001,Weather deterioration detected,environmental,T+02:00,120.0,0.95,0.8,false,,visibility_reduced|temperature_drop|wind_increased
+EVT_002,Deploy Team Alpha to North Zone,action,T+00:30,45.0,,0.6,true,ACT_001,zone_north_covered|team_alpha_deployed
+EVT_003,Deploy Team Bravo to South Zone,action,T+00:45,50.0,,0.6,true,ACT_001,zone_south_covered|team_bravo_deployed
+EVT_004,Aerial reconnaissance initiated,action,T+01:00,90.0,,0.7,true,ACT_001,aerial_coverage_active|thermal_scan_running
+EVT_005,Missing hiker signal detected,emergent,T+02:30,5.0,0.6,0.9,false,EVT_004,potential_location_identified|teams_alerted
+EVT_006,Emergency shelter deployed,action,T+03:00,20.0,,0.5,true,ACT_002,shelter_available|protection_established
+EVT_007,Medical team activated,action,T+02:45,15.0,,0.6,false,ACT_001,medical_response_ready|extraction_prepared
+EVT_008,Communication system backup activated,system,T+00:15,10.0,,0.4,false,ACT_007,redundancy_established|network_stable
+EVT_009,Search dog deployed to East Zone,action,T+01:15,60.0,,0.65,true,ACT_009,canine_search_active|scent_tracking_started
+EVT_010,Weather warning issued,environmental,T+01:45,5.0,0.9,0.7,false,ACT_010,teams_warned|contingency_activated
+EVT_011,Resource resupply requested,action,T+02:15,30.0,,0.3,false,ACT_008,resupply_enroute|logistics_coordinated
+EVT_012,Hiker located alive,emergent,T+03:15,2.0,0.75,1.0,false,EVT_005,hiker_found|position_confirmed|medical_needed
+EVT_013,Emergency medical treatment initiated,action,T+03:20,25.0,,0.8,false,ACT_004,patient_stabilized|vitals_monitored
+EVT_014,Helicopter extraction commenced,action,T+03:45,35.0,,0.85,false,ACT_005,aerial_extraction|patient_loaded
+EVT_015,All teams recalled to base,action,T+04:30,90.0,,0.6,false,ACT_001,demobilization_started|equipment_recovered

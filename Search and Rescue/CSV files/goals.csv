@@ -1,0 +1,11 @@
+goal_id,name,priority,status,success_criteria,deadline,measurable_target,current_progress,parent_goal,failure_consequences
+GOAL_001,Locate missing hiker,critical,active,hiker_found|position_confirmed|condition_assessed,T+04:00,100.0,0.35,,hypothermia_risk|mission_escalation
+GOAL_002,Ensure team safety,critical,active,all_teams_accounted|no_injuries|safe_extraction,T+06:00,100.0,0.8,,casualties|mission_abort
+GOAL_003,Establish communication network,high,achieved,all_teams_connected|backup_established|clear_signals,T+01:00,100.0,1.0,,coordination_failure|safety_risk
+GOAL_004,Deploy search teams to all zones,high,active,north_covered|south_covered|east_covered|central_covered,T+01:30,100.0,0.75,GOAL_001,incomplete_coverage
+GOAL_005,Prepare emergency medical response,high,active,medical_supplies_ready|extraction_plan_set|hospital_notified,T+02:00,100.0,0.9,,treatment_delay
+GOAL_006,Monitor weather conditions,medium,active,hourly_updates|forecast_accuracy|early_warning,T+06:00,100.0,0.7,GOAL_002,surprise_conditions
+GOAL_007,Manage resource allocation,medium,active,optimal_distribution|no_shortages|tracking_complete,T+06:00,100.0,0.6,,resource_depletion
+GOAL_008,Document incident for review,low,pending,photos_taken|timeline_recorded|decisions_logged,T+08:00,100.0,0.1,,learning_opportunity_lost
+GOAL_009,Evacuate hiker to medical facility,critical,pending,safe_transport|medical_monitoring|hospital_arrival,T+05:00,100.0,0.0,GOAL_001,medical_deterioration
+GOAL_010,Debrief and demobilize teams,medium,pending,all_personnel_accounted|equipment_recovered|lessons_captured,T+08:00,100.0,0.0,,incomplete_closure

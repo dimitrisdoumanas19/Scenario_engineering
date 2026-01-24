@@ -1,0 +1,4 @@
+source_entity_id,source_entity_type,target_entity_id,target_entity_type,violation_severity,intentional
+EVT_002,Event,CON_007,Constraint,0.3,false
+EVT_013,Event,CON_004,Constraint,0.5,false
+EVT_004,Event,CON_008,Constraint,0.2,false

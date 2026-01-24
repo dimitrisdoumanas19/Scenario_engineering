@@ -1,0 +1,11 @@
+value_id,name,category,priority_weight,description,stakeholders,measurable_indicators,conflicts_with,cultural_context,tradeable
+VAL_001,Preserve human life,ethical,1.0,Prioritize saving lives above all other objectives including property and cost,ACT_001|ACT_002|ACT_003|ACT_004,zero_casualties|successful_rescue|medical_response,,medical_ethics,false
+VAL_002,Operational efficiency,operational,0.7,Complete mission with minimal resource expenditure and time,ACT_001|ACT_008,resource_utilization|time_optimization|cost_control,VAL_001,organizational_management,true
+VAL_003,Team safety priority,ethical,0.95,Never compromise rescuer safety even for mission success,ACT_001|all_field_actors,zero_team_injuries|safety_protocol_adherence,,SAR_doctrine,false
+VAL_004,Transparency and communication,professional,0.75,Maintain clear information flow to all stakeholders,ACT_001|ACT_007,regular_updates|accurate_reporting|stakeholder_informed,,professional_standards,true
+VAL_005,Evidence-based decision making,strategic,0.8,Base decisions on data and expert assessment rather than assumptions,ACT_001|ACT_010,decisions_justified|data_driven|expert_consulted,VAL_006,scientific_method,true
+VAL_006,Rapid response imperative,operational,0.85,Act quickly to maximize survival chances even with incomplete information,ACT_001|all_teams,response_time|decision_speed,VAL_005,emergency_response,true
+VAL_007,Resource stewardship,strategic,0.65,Preserve equipment and supplies for future missions,ACT_008|ACT_001,equipment_recovery|supply_conservation,VAL_001|VAL_006,organizational_sustainability,true
+VAL_008,Collaborative coordination,professional,0.7,Foster teamwork and inter-agency cooperation,ACT_001|ACT_007|all_actors,team_cohesion|information_sharing|unified_command,,emergency_management,true
+VAL_009,Accountability and documentation,professional,0.6,Maintain accurate records for learning and legal protection,ACT_001|ACT_007,documentation_complete|decisions_recorded|timeline_accurate,,professional_liability,true
+VAL_010,Community trust,strategic,0.55,Build public confidence through professional conduct,ACT_001,public_satisfaction|media_relations|reputation_maintained,VAL_009,public_service,true

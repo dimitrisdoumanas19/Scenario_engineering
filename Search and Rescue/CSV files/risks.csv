@@ -1,0 +1,13 @@
+risk_id,name,category,severity,likelihood,risk_score,time_horizon,affected_entities,mitigation_strategies,current_status
+RISK_001,Hypothermia threat to hiker,safety,critical,likely,0.85,T+03:00,missing_hiker,accelerate_search|prepare_warming_equipment|emergency_shelter,active
+RISK_002,Team exposure in deteriorating conditions,safety,moderate,possible,0.5,T+02:30,ACT_002|ACT_003|ACT_006|ACT_009,recall_teams|provide_shelter|weather_monitoring,potential
+RISK_003,Communication system failure,technical,critical,unlikely,0.4,immediate,all_actors,backup_system|redundant_channels|satellite_backup,mitigated
+RISK_004,Helicopter operational limits,operational,moderate,likely,0.6,T+02:00,ACT_005|EVT_014,fuel_management|weather_clearance|alternate_transport,active
+RISK_005,Insufficient daylight for extraction,operational,moderate,possible,0.5,T+04:00,GOAL_009|EVT_014,accelerate_timeline|night_equipment|staging_area,potential
+RISK_006,Search dog fatigue,operational,minor,possible,0.3,T+03:00,RES_005|ACT_009,rotation_schedule|rest_periods|backup_dog,potential
+RISK_007,Medical supply depletion,operational,moderate,unlikely,0.35,T+05:00,RES_002|GOAL_005,resupply_request|rationing|prioritization,potential
+RISK_008,Terrain hazard to field teams,safety,critical,unlikely,0.45,immediate,ACT_002|ACT_003,terrain_assessment|safety_protocols|buddy_system,mitigated
+RISK_009,Hiker condition deterioration,safety,catastrophic,likely,0.95,T+02:00,missing_hiker|GOAL_001,rapid_response|medical_readiness|helicopter_standby,active
+RISK_010,Resource allocation conflict,strategic,minor,possible,0.25,T+01:00,GOAL_007|multiple_goals,prioritization_matrix|coordinator_authority|flexibility,potential
+RISK_011,False signal diversion,operational,moderate,possible,0.45,immediate,GOAL_001|field_teams,signal_verification|multiple_confirmation|experienced_operators,potential
+RISK_012,Team member injury during rescue,safety,moderate,unlikely,0.4,immediate,all_field_actors,safety_protocols|training|proper_equipment,mitigated

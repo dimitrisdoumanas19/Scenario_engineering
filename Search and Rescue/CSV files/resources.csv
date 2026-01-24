@@ -1,0 +1,16 @@
+resource_id,name,type,quantity,unit,consumption_rate,replenishable,criticality,location,access_restrictions
+RES_001,Thermal imaging camera,equipment,2.0,items,,false,essential,Base Camp,trained_operators_only
+RES_002,Emergency medical supplies,consumable,100.0,percent,5.0,true,important,All Teams,
+RES_003,Portable radio units,equipment,12.0,items,,false,essential,Distributed,
+RES_004,Helicopter fuel,consumable,450.0,liters,75.0,true,essential,Base Camp,certified_pilots_only
+RES_005,Search and rescue dogs,personnel,2.0,personnel,,false,important,Search Zone North,handler_required
+RES_006,Rope rescue equipment,equipment,8.0,sets,,false,important,Field Teams,certified_personnel_only
+RES_007,GPS tracking devices,equipment,15.0,items,,false,essential,All Teams,
+RES_008,Emergency shelter kits,consumable,10.0,items,,true,useful,Base Camp,
+RES_009,Portable weather station,equipment,1.0,items,,false,useful,Base Camp,
+RES_010,Satellite communication system,infrastructure,1.0,system,,false,essential,Base Camp,maintenance_certified
+RES_011,First aid trained personnel,personnel,6.0,personnel,,false,important,Distributed,
+RES_012,Potable water supply,consumable,200.0,liters,15.0,true,essential,All Teams,
+RES_013,High-visibility marking flags,consumable,100.0,items,8.0,true,useful,Field Teams,
+RES_014,Night vision equipment,equipment,4.0,items,,false,useful,Base Camp,trained_operators_only
+RES_015,Emergency flares,consumable,24.0,items,,true,useful,All Teams,
