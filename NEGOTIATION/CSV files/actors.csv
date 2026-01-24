@@ -1,0 +1,9 @@
+actor_id,name,role,bargaining_power,interests,positions,negotiation_style,reservation_point,aspiration_level,trust_level,cultural_background,constituency,authority_level,risk_tolerance
+ACT_001,Sarah Chen,principal,4,"job_security|wage_increase|benefits_protection|working_conditions","12% wage increase|no benefit cuts|safety improvements",collaborative,5.5,12.0,0.6,collectivist,manufacturing_workers|warehouse_staff,limited,0.7
+ACT_002,David Thompson,principal,3,"cost_control|productivity|labor_stability|competitiveness","4% wage increase|modified benefits package",competitive,7.0,4.0,0.5,individualist,shareholders|executives,limited,0.4
+ACT_003,Maria Rodriguez,mediator,2,process_fairness|timely_resolution,,collaborative,,,0.9,neutral,,advisory,0.6
+ACT_004,Union Executive Board,stakeholder,3,member_welfare|union_strength,"support wage demands|maintain solidarity",collaborative,,,0.8,collectivist,union_members,full,0.5
+ACT_005,Plant Workers,principal,5,"fair_wages|job_security|safe_workplace|work_life_balance","significant wage increase|better benefits",accommodating,6.0,15.0,0.7,collectivist,frontline_workers,none,0.8
+ACT_006,HR Director,agent,2,"legal_compliance|talent_retention|budget_adherence","reasonable settlement|avoid_litigation",compromising,,,0.7,individualist,management_team,limited,0.5
+ACT_007,Company CFO,stakeholder,4,"financial_performance|shareholder_value|operational_efficiency","minimize_costs|preserve_margins",competitive,,,0.4,individualist,board_of_directors,full,0.3
+ACT_008,Government Labor Inspector,observer,1,legal_compliance|worker_protection,,neutral,,,0.9,neutral,regulatory_body,advisory,0.2

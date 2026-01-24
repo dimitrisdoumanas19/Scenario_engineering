@@ -1,0 +1,11 @@
+goal_id,description,type,priority,quantifiable_target,target_unit,timeframe,flexibility,compatibility_score,underlying_interest,stakeholder_support,achievement_criteria
+GOAL_001,Achieve 8% wage increase for all union members,distributive,critical,8.0,percent,within_30_days,0.6,-0.7,financial_security,0.9,contract_signed|ratification_vote_passed
+GOAL_002,Limit total compensation increase to 5%,distributive,high,5.0,percent,within_30_days,0.5,-0.7,financial_sustainability,0.7,board_approval|budget_maintained
+GOAL_003,Improve workplace safety standards,integrative,high,,,within_90_days,0.8,0.6,employee_wellbeing,0.95,safety_audit_passed|incident_reduction
+GOAL_004,Maintain production continuity,procedural,critical,,,immediate,0.3,0.4,operational_stability,0.85,zero_work_stoppages|on_time_delivery
+GOAL_005,Preserve employee benefits package,distributive,high,,,within_30_days,0.4,-0.5,security,0.9,no_benefit_reductions|coverage_maintained
+GOAL_006,Establish joint labor-management committee,integrative,medium,,,within_60_days,0.9,0.8,collaborative_relations,0.7,committee_formed|regular_meetings_scheduled
+GOAL_007,Achieve market-competitive wages,distributive,high,6.5,percent,within_30_days,0.7,-0.6,talent_retention,0.75,wage_survey_alignment|reduced_turnover
+GOAL_008,Reduce overtime costs,distributive,medium,15.0,percent,within_90_days,0.6,-0.4,cost_efficiency,0.6,overtime_budget_met|hiring_targets_achieved
+GOAL_009,Build trust between parties,relational,high,,,ongoing,0.9,0.9,sustainable_relationship,0.8,improved_communication|reduced_grievances
+GOAL_010,Ensure fair negotiation process,procedural,critical,,,immediate,0.2,0.7,legitimacy,0.95,transparent_procedures|equal_voice

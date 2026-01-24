@@ -1,0 +1,13 @@
+constraint_id,description,constraint_type,enforcement,scope,deadline,batna_value,flexibility_margin,source,violation_consequences,monitoring_mechanism
+CON_001,Current contract expires in 30 days,temporal,mandatory,all_events,2024-02-15T23:59:59Z,,0.1,collective_bargaining_agreement,contract_lapse|potential_strike,contract_administrator
+CON_002,Union's BATNA: market wage rate of 3.5%,batna,normative,ACT_001,,3.5,0.2,labor_market_data,member_dissatisfaction|strike_resistance,economic_analysis
+CON_003,Management's BATNA: hire replacement workers at market rate,batna,normative,ACT_002,,4.2,0.15,labor_market_data,operational_disruption|reputational_damage,hr_assessment
+CON_004,Federal labor law requirements for good faith bargaining,legal,mandatory,ACT_001|ACT_002,,,0.0,national_labor_relations_act,unfair_labor_practice_charges|fines,government_oversight
+CON_005,Maximum budget allocation of $3M for wage increases,resource,mandatory,ACT_002,,,0.05,board_directive,budget_overrun|financial_penalties,cfo_approval
+CON_006,Union constitution requires 2/3 ratification vote,procedural,mandatory,ACT_001,,,0.0,union_bylaws,agreement_rejection|leadership_challenge,vote_certification
+CON_007,Cultural norm of collaborative labor relations in region,cultural,normative,ACT_001|ACT_002,,,0.7,community_expectations,public_criticism|relationship_damage,stakeholder_feedback
+CON_008,Industry pattern bargaining precedent of 5.5%,political,advisory,ACT_001|ACT_002,,,0.4,industry_standards,competitive_disadvantage|union_criticism,comparative_analysis
+CON_009,Confidentiality agreement for financial disclosures,legal,mandatory,ACT_001|ACT_002|ACT_003,,,0.0,negotiated_ground_rules,legal_liability|trust_breakdown,mutual_agreement
+CON_010,State law prohibition on strikes in essential services,legal,mandatory,ACT_001,,,,state_statute,criminal_penalties|injunctions,court_enforcement
+CON_011,Board meeting schedule requires decision by Feb 12,temporal,mandatory,ACT_002,2024-02-12T17:00:00Z,,0.05,corporate_governance,delayed_implementation|uncertainty,board_secretary
+CON_012,Physical capacity: negotiation room seats maximum 8 people,physical,advisory,all_events,,,0.3,facility_limitations,overcrowding|discomfort,facility_management

@@ -1,0 +1,13 @@
+resource_id,name,type,quantity,unit,leverage_value,transferability,divisibility,renewability,current_holder,information_asymmetry,time_sensitivity
+RES_001,Strike Authorization Vote,political,1.0,vote,high,non_transferable,FALSE,one_time,ACT_001,FALSE,time_critical
+RES_002,Compensation Budget Reserve,financial,2500000.0,dollars,medium,fully_transferable,TRUE,depletable,ACT_002,TRUE,stable
+RES_003,Industry Wage Data,informational,1.0,dataset,medium,fully_transferable,FALSE,renewable,ACT_003,FALSE,stable
+RES_004,Legal Precedent on Wage Disputes,legal,1.0,case_law,high,non_transferable,FALSE,renewable,ACT_006,TRUE,stable
+RES_005,Worker Solidarity,social,850.0,members,high,non_transferable,FALSE,renewable,ACT_001,FALSE,declining_value
+RES_006,Management Authority,political,1.0,mandate,critical,non_transferable,FALSE,renewable,ACT_002,FALSE,stable
+RES_007,Mediation Services,procedural,40.0,hours,medium,partially_transferable,TRUE,renewable,ACT_003,FALSE,stable
+RES_008,Production Capacity Data,informational,1.0,report,medium,partially_transferable,FALSE,one_time,ACT_002,TRUE,time_critical
+RES_009,Union Treasury Funds,financial,500000.0,dollars,medium,fully_transferable,TRUE,depletable,ACT_004,FALSE,stable
+RES_010,Public Opinion Support,social,1.0,sentiment,medium,non_transferable,FALSE,renewable,ACT_001,FALSE,declining_value
+RES_011,Alternative Workforce Options,temporal,30.0,days,low,non_transferable,FALSE,one_time,ACT_002,TRUE,time_critical
+RES_012,Contract Expiration Deadline,temporal,30.0,days,critical,non_transferable,FALSE,depletable,SHARED,FALSE,time_critical
