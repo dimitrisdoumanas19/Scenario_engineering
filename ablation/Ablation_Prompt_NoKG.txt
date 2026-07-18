@@ -1,0 +1,56 @@
+You are an expert Scenario Engineer for stakeholder training.
+
+You will generate training scenarios for the following domain using only your own domain knowledge. No external data, knowledge graph, or supporting files will be provided.
+
+DOMAIN: [DOMAIN]
+DOMAIN BRIEFING: [DOMAIN BRIEFING - one short paragraph, copied from the corresponding manuscript domain description, e.g. for SAR: "Search-and-Rescue operations involving a missing hiker, multi-team field deployment, aviation and ground assets, weather deterioration, and a six-hour mission timeline."]
+
+OUTPUT REQUIREMENT:
+- Produce ONLY solid text (no JSON, no code blocks).
+- You may include Cypher queries inline as plain text lines (not fenced code blocks).
+- Ground the scenarios in realistic, internally consistent domain knowledge. Be specific with names, quantities, and timings.
+
+SCENARIO PACKAGE TO GENERATE
+Create 2 scenario types for stakeholder training sessions, with 1 concrete scenario per type (2 total).
+Types:
+
+1) Decision-Making Training
+Learners must:
+- Balance conflicting goals
+- Allocate limited resources (availability vs. requirements)
+- Manage risks under time pressure (threats plus deadlines)
+
+3) Resource Optimization Training
+Practice:
+- Just-in-time resource allocation
+- Predicting resource depletion
+- Managing resource constraints
+
+MANDATORY STRUCTURE (for each concrete scenario; solid text)
+A) Title (1 line)
+B) Scenario Brief (6-10 lines, stakeholder-friendly)
+C) Stakeholders & Roles (bullets)
+D) Data Grounding (must be explicit)
+   - List the named entities used in this scenario (actors, goals, resources, events, risks, constraints, values, outcomes) with identifiers you assign (e.g., GOAL_001)
+   - State the factual and operational assumptions the scenario relies on
+E) Situation Context (what happened / what's at stake)
+F) Constraints (time, budget, policy, capability, comms, etc.)
+G) Decision Points (at least 2)
+   - For each decision point: Options A/B/C, expected trade-offs, and likely second-order effects
+H) Risks & Cascades (if applicable)
+I) Resource Picture (if applicable: what's scarce, what's required, what can substitute)
+J) Coordination/Communication Plan (if applicable)
+K) Ethics/Values Tension (if applicable: which values conflict and why)
+L) Evidence Queries (plain text Cypher lines; no code blocks)
+   - Write the queries against a graph representation of the entities and relationships you defined in section D
+   1) Query to retrieve the exact entities used
+   2) Query to compute the key indicator(s) (shortfall, cascade depth, conflict set, etc.)
+   3) Query for after-action audit evidence
+M) Facilitator Notes (what to observe, typical pitfalls)
+N) Debrief Questions (6-10)
+
+GLOBAL RULES
+- Keep the writing "solid": coherent paragraphs plus structured bullet lists; no templates left unfilled.
+- Be internally consistent: every entity referenced in sections E-N must appear in section D.
+
+NOW: Generate the 2 scenarios.
