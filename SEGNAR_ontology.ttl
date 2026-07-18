@@ -1,0 +1,173 @@
+@prefix :        <https://w3id.org/segnar/ontology#> .
+@prefix segnar:  <https://w3id.org/segnar/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+
+#################################################################
+#    Ontology
+#################################################################
+
+<https://w3id.org/segnar/ontology> a owl:Ontology ;
+    dcterms:title "SEGNAR Domain-Independent Narrative Ontology"@en ;
+    dcterms:description "A domain-independent ontology capturing universal narrative structures for scenario engineering in high-stakes decision-making training. It defines eight core classes (Actor, Goal, Resource, Event, Risk, Constraint, Value, Outcome) and the relationships that encode causal dependencies, resource requirements, and goal and value conflicts. Domain-specific knowledge graphs instantiate these classes for particular operational domains such as Search-and-Rescue, Border Security, and Crisis Negotiation."@en ;
+    dcterms:creator "Dimitrios Doumanas" , "Konstantinos Kotis" ;
+    dcterms:publisher "Intelligent Systems Lab, University of the Aegean" ;
+    vann:preferredNamespacePrefix "segnar" ;
+    vann:preferredNamespaceUri "https://w3id.org/segnar/ontology#" ;
+    owl:versionInfo "1.0" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
+
+#################################################################
+#    Classes
+#################################################################
+
+segnar:Actor a owl:Class ;
+    rdfs:label "Actor"@en ;
+    rdfs:comment "An agent with decision-making authority that pursues goals within a scenario (e.g., a rescue team leader, an intelligence analyst, a negotiator)."@en .
+
+segnar:Goal a owl:Class ;
+    rdfs:label "Goal"@en ;
+    rdfs:comment "An objective pursued by one or more actors, potentially in conflict with other goals."@en .
+
+segnar:Resource a owl:Class ;
+    rdfs:label "Resource"@en ;
+    rdfs:comment "An asset or capability required to achieve goals; may be scarce, consumable, or renewable."@en .
+
+segnar:Event a owl:Class ;
+    rdfs:label "Event"@en ;
+    rdfs:comment "A state-changing occurrence in the scenario timeline that may cause further events or affect outcomes."@en .
+
+segnar:Risk a owl:Class ;
+    rdfs:label "Risk"@en ;
+    rdfs:comment "A potential negative outcome that threatens goals, characterised by a likelihood and a severity or risk score."@en .
+
+segnar:Constraint a owl:Class ;
+    rdfs:label "Constraint"@en ;
+    rdfs:comment "An operational, temporal, regulatory, or policy limitation that constrains goals, actions, or resource use."@en .
+
+segnar:Value a owl:Class ;
+    rdfs:label "Value"@en ;
+    rdfs:comment "An ethical or strategic principle that constrains goals and may conflict with other values in high-stakes decisions."@en .
+
+segnar:Outcome a owl:Class ;
+    rdfs:label "Outcome"@en ;
+    rdfs:comment "A result state reached through a sequence of events and decisions, reflecting the achievement or violation of goals and values."@en .
+
+#################################################################
+#    Object properties
+#################################################################
+
+segnar:pursues a owl:ObjectProperty ;
+    rdfs:label "pursues"@en ;
+    rdfs:domain segnar:Actor ;
+    rdfs:range segnar:Goal ;
+    rdfs:comment "Relates an actor to a goal it seeks to achieve."@en .
+
+segnar:requires a owl:ObjectProperty ;
+    rdfs:label "requires"@en ;
+    rdfs:domain segnar:Goal ;
+    rdfs:range segnar:Resource ;
+    rdfs:comment "Relates a goal to a resource needed for its achievement."@en .
+
+segnar:possesses a owl:ObjectProperty ;
+    rdfs:label "possesses"@en ;
+    rdfs:domain segnar:Actor ;
+    rdfs:range segnar:Resource ;
+    rdfs:comment "Relates an actor to a resource it controls or holds."@en .
+
+segnar:threatens a owl:ObjectProperty ;
+    rdfs:label "threatens"@en ;
+    rdfs:domain segnar:Risk ;
+    rdfs:range segnar:Goal ;
+    rdfs:comment "Relates a risk to a goal it may negatively affect."@en .
+
+segnar:causes a owl:ObjectProperty ;
+    rdfs:label "causes"@en ;
+    rdfs:domain segnar:Event ;
+    rdfs:range segnar:Event ;
+    rdfs:comment "Relates an event to a subsequent event it brings about, encoding causal chains."@en .
+
+segnar:enables a owl:ObjectProperty ;
+    rdfs:label "enables"@en ;
+    rdfs:domain segnar:Event ;
+    rdfs:range segnar:Goal ;
+    rdfs:comment "Relates an event to a goal whose achievement it makes possible."@en .
+
+segnar:conflictsWith a owl:ObjectProperty , owl:SymmetricProperty ;
+    rdfs:label "conflictsWith"@en ;
+    rdfs:comment "Relates two goals, or two values, that are in tension. Realised in Neo4j as the CONFLICTS relationship, carrying a conflict_type and conflict_intensity."@en .
+
+segnar:constrains a owl:ObjectProperty ;
+    rdfs:label "constrains"@en ;
+    rdfs:domain segnar:Constraint ;
+    rdfs:range segnar:Goal ;
+    rdfs:comment "Relates a constraint to a goal or action whose scope it limits. Values may also constrain goals."@en .
+
+segnar:mitigates a owl:ObjectProperty ;
+    rdfs:label "mitigates"@en ;
+    rdfs:domain segnar:Resource ;
+    rdfs:range segnar:Risk ;
+    rdfs:comment "Relates a resource or action to a risk it reduces."@en .
+
+segnar:achieves a owl:ObjectProperty ;
+    rdfs:label "achieves"@en ;
+    rdfs:domain segnar:Event ;
+    rdfs:range segnar:Outcome ;
+    rdfs:comment "Relates an event or decision to an outcome it produces."@en .
+
+segnar:evaluates a owl:ObjectProperty ;
+    rdfs:label "evaluates"@en ;
+    rdfs:domain segnar:Value ;
+    rdfs:range segnar:Outcome ;
+    rdfs:comment "Relates a value to an outcome assessed against it."@en .
+
+#################################################################
+#    Datatype properties (selected; full attribute sets are
+#    instantiated per domain in the knowledge graphs)
+#################################################################
+
+segnar:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Stable identifier of an individual (realised per class as actor_id, goal_id, resource_id, event_id, risk_id, constraint_id, value_id, outcome_id)."@en .
+
+segnar:name a owl:DatatypeProperty ;
+    rdfs:label "name"@en ;
+    rdfs:range xsd:string .
+
+segnar:priority a owl:DatatypeProperty ;
+    rdfs:label "priority"@en ;
+    rdfs:domain segnar:Goal ;
+    rdfs:range xsd:string .
+
+segnar:riskScore a owl:DatatypeProperty ;
+    rdfs:label "risk_score"@en ;
+    rdfs:domain segnar:Risk ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Model-assigned risk score in the interval [0,1]. See Section 3.2 of the paper."@en .
+
+segnar:conflictIntensity a owl:DatatypeProperty ;
+    rdfs:label "conflict_intensity"@en ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Model-assigned intensity of a goal or value conflict in the interval [0,1], carried on the CONFLICTS relationship."@en .
+
+segnar:quantity a owl:DatatypeProperty ;
+    rdfs:label "quantity"@en ;
+    rdfs:domain segnar:Resource ;
+    rdfs:range xsd:decimal .
+
+segnar:consumable a owl:DatatypeProperty ;
+    rdfs:label "consumable"@en ;
+    rdfs:domain segnar:Resource ;
+    rdfs:range xsd:boolean .
+
+segnar:timestamp a owl:DatatypeProperty ;
+    rdfs:label "timestamp"@en ;
+    rdfs:domain segnar:Event ;
+    rdfs:range xsd:dateTime .
+
+# End of ontology
